@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int a;
+    printf("상품의 종류를 입력해주세요: ");
+    scanf("%d", &a); 
+
+    if (a <= 0) {
+        printf("상품의 종류는 1 이상의 정수여야 합니다.\n");
+        return 1; 
+    }
+
+    int b[a]; 
+    int c[a]; 
+
+    printf("상품별 입고 수량을 입력해주세요 (ex)8 5 3 4 9 : ");
+    for(int i = 0; i < a; i++){ // 인덱스를 0부터 시작
+        scanf("%d", &b[i]);
+    }
+
+    printf("상품별 판매 수량을 입력해주세요 (ex)5 2 2 2 4 : ");
+    for(int i = 0; i < a; i++){ // 인덱스를 0부터 시작
+        scanf("%d", &c[i]);
+    }
+
+    printf("입고 수량: ");
+    for(int i = 0; i < a; i++){
+        printf("%d ", b[i]);
+    }
+    printf("\n");
+
+    printf("판매 수량: ");
+    for(int i = 0; i < a; i++){
+        printf("%d ", c[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+
+
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main()
+{
+    int a;
+    printf("상품의 종류를 입력해주세요: ");
+    scanf("%d", a);
+    int b[a];
+    printf("상품별 입고 수량을 입력해주세요 ex)8 5 3 4 9 : ");
+    for(int i = 1; i<=a; i++){
+        scanf("%d", &b[a]);
+    }
+    int c[a];
+    printf("상품별 판매 수량을 입력해주세요 ex)5 2 2 2 4 : ");
+    for(int i=1; i<=a; i++){
+        scanf("%d", &c[a]);
+    }
+    
+}
